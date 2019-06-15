@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>jQuery Calculator</title>
+
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Added a link to our external stylesheet-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+<body>
+
+<!-- Jumbotron for Title -->
+<div class="jumbotron">
+    <h1 class="text-center">Crystals Collector!</h1>
+    <br>
+    <h4 class="text-center">Click a Crystal to Begin!</h4>
+</div>
+
+<div class="container">
+
+    <div class="row">
+
+      <!-- Calculator Card -->
+      <div class="col-lg-7">
+        <div class="card">
+          <h3 class="card-header">Crystal Collection</h3>
+          <h5 class="card-header">Choose wisely!</h5>
+
+          <div class="card-body">
+            <span>
+                    <img class="crsytal" id="crystal-1" src="assets/images/001-crystal.png" alt="green crystal">
+                    <img class="crsytal" id="crystal-2" src="assets/images/002-mineral.png" alt="green crystal">
+                    <img class="crsytal" id="crystal-3" src="assets/images/003-gem.png" alt="green crystal">
+                    <img class="crsytal" id="crystal-4" src="assets/images/004-mineral-1.png" alt="mineral">
+
+            </span>
+            <div class="image-credit">Icons made by <a href="https://www.freepik.com/?__hstc=57440181.49466c523670bac5f710380a55ecb3d4.1560565853603.1560565853603.1560565853603.1&__hssc=57440181.2.1560565853604&__hsfp=3882667602" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" 			    title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Result Card -->
+      <div class="col-lg-5">
+        <div class="card">
+          <h3 class="card-header">Result</h3>
+          <div class="card-body">
+            <h2 id="first-number">Random CPU Number</h2>
+            <hr>
+            <h2 id="second-number">User Guess Total</h2>
+            <hr>
+            <h4 id="wins">Wins:</h4>
+            <h4 id="losses">Losses:</h4>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
