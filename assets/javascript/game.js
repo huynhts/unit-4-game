@@ -20,13 +20,13 @@ function evaluateCrystals() {
         wins++;
         resetVals();
         cpuCollection();
-        $('#second-number').text('0');
+        $('#second-number').text('Collection Value: 0');
         $('#wins').text('Wins: ' + wins);
     } else if (collectedCrystals > cpuNum) {
         losses ++;
         resetVals();
         cpuCollection();
-        $('#second-number').text('0');
+        $('#second-number').text('Collection Value: 0');
         $('#losses').text('Losses: ' + losses);
     }
 }
@@ -48,7 +48,7 @@ function cpuCollection(){
     $('.crystal').on('click', function() {
         if (clickCrystal) {
             cpuNum = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
-            $('#first-number').text(cpuNum);
+            $('#first-number').text('Crystal Value: ' + cpuNum);
             for (var i = 0; i < 4; i++) {
                 var userRandom = Math.floor(Math.random() * (12 - 1 + 1)) + 1;
 
@@ -65,30 +65,30 @@ function cpuCollection(){
     })
 }
 
-    //this on click adds crystals to user collection and compares collection against the CPU crystal value
-    $('#crystal-1').on('click', function() {
-        collectedCrystals += crystal1;
-        $('#second-number').text(collectedCrystals);
-        evaluateCrystals();
-    });
+//this on click adds crystals to user collection and compares collection against the CPU crystal value
+$('#crystal-1').on('click', function() {
+    collectedCrystals += crystal1;
+    $('#second-number').text('Collection Value: ' + collectedCrystals);
+    evaluateCrystals();
+});
 
-    $('#crystal-2').on('click', function() {
-        collectedCrystals += crystal2;
-        $('#second-number').text(collectedCrystals);
-        evaluateCrystals();
-    });
+$('#crystal-2').on('click', function() {
+    collectedCrystals += crystal2;
+    $('#second-number').text('Collection Value: ' + collectedCrystals);
+    evaluateCrystals();
+});
 
-    $('#crystal-3').on('click', function() {
-        collectedCrystals += crystal3;
-        $('#second-number').text(collectedCrystals);
-        evaluateCrystals();
-    });
+$('#crystal-3').on('click', function() {
+    collectedCrystals += crystal3;
+    $('#second-number').text('Collection Value: ' + collectedCrystals);
+    evaluateCrystals();
+});
 
-    $('#crystal-4').on('click', function() {
-        collectedCrystals += crystal4;
-        $('#second-number').text(collectedCrystals);
-        evaluateCrystals();
-    });
+$('#crystal-4').on('click', function() {
+    collectedCrystals += crystal4;
+    $('#second-number').text('Collection Value: ' + collectedCrystals);
+    evaluateCrystals();
+});
     
 
 
